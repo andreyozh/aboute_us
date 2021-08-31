@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="menu2.css" /> -->
+    <!-- <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/imagesloaded.min.js "></script>
+    <script src="./js/masonry.min.js"></script>
+    <script src="js/main.js"></script> -->
+
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: burlywood;
+        text-align: center;
+        border: 2px solid orangered;
+      }
+      .about-row {
+        /* background-color: chartreuse; */
+        margin-top: 30px;
+      }
+      .about-head {
+        /* background-color: cornflowerblue; */
+        text-align: justify;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="about-row">О нас</div>
+      <div class="about-head">
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+          interdum, nisi lorem egestas vitae scel
+          <span id="dots">...</span
+          ><span id="more" style="display: none">
+            erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+            congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+            aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+            ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+            Donec vitae dui eget tellus gravida venenatis. Integer fringilla
+            congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+          </span>
+        </p>
+        <br />
+        <div style="text-align: center">
+          <button onclick="myFunction()" id="myBtn">Читать далее</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Читать далее";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Свернуть";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+    <br />
+  </body>
+</html>
